@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://pinkslipprovivider.rms.soacourse.unsw.edu.au/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/" name="PinkSlipProviderImplService" targetNamespace="http://pinkslipprovivider.rms.soacourse.unsw.edu.au/">
+  <wsdl:import location="PinkSlipProvider.wsdl" namespace="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/">
+    </wsdl:import>
+  <wsdl:binding name="PinkSlipProviderImplServiceSoapBinding" type="ns1:PinkSlipProvider">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="VehicleAge">
+      <soap:operation soapAction="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/VehicleAge" style="document"/>
+      <wsdl:input name="VehicleAge">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="VehicleAgeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DriverNotFoundFaultException">
+        <soap:fault name="DriverNotFoundFaultException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="DataAccessFaultException">
+        <soap:fault name="DataAccessFaultException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PSCheck">
+      <soap:operation soapAction="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/PSCheck" style="document"/>
+      <wsdl:input name="PSCheck">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="PSCheckResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DriverNotFoundFaultException">
+        <soap:fault name="DriverNotFoundFaultException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="DataAccessFaultException">
+        <soap:fault name="DataAccessFaultException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PinkSlipProviderImplService">
+    <wsdl:port binding="tns:PinkSlipProviderImplServiceSoapBinding" name="PinkSlipProviderImplPort">
+      <soap:address location="http://localhost:8080/PinkSlipProvider/pinkslip"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

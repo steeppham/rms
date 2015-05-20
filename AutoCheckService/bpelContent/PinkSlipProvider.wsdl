@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/" name="PinkSlipProvider" targetNamespace="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/" version="1.0">
+
+  <xs:element name="DataAccessFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="message" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DriverNotFoundFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="message" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PSCheckRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastname" type="xs:string"/>
+        <xs:element name="firstname" type="xs:string"/>
+        <xs:element name="RegoNumber" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PSCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastname" type="xs:string"/>
+        <xs:element name="firstname" type="xs:string"/>
+        <xs:element name="RegoNumber" type="xs:int"/>
+        <xs:element name="checkedFlag" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="VehicleAgeRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastname" type="xs:string"/>
+        <xs:element name="firstname" type="xs:string"/>
+        <xs:element name="RegoNumber" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="VehicleAgeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="age" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="PSCheckResponse">
+    <wsdl:part element="ns1:PSCheckResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="PSCheck">
+    <wsdl:part element="ns1:PSCheckRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="VehicleAge">
+    <wsdl:part element="ns1:VehicleAgeRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="VehicleAgeResponse">
+    <wsdl:part element="ns1:VehicleAgeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DriverNotFoundFaultException">
+    <wsdl:part element="ns1:DriverNotFoundFault" name="DriverNotFoundFaultException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DataAccessFaultException">
+    <wsdl:part element="ns1:DataAccessFault" name="DataAccessFaultException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PinkSlipProvider">
+    <wsdl:operation name="VehicleAge">
+      <wsdl:input message="ns1:VehicleAge" name="VehicleAge">
+    </wsdl:input>
+      <wsdl:output message="ns1:VehicleAgeResponse" name="VehicleAgeResponse">
+    </wsdl:output>
+      <wsdl:fault message="ns1:DriverNotFoundFaultException" name="DriverNotFoundFaultException">
+    </wsdl:fault>
+      <wsdl:fault message="ns1:DataAccessFaultException" name="DataAccessFaultException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PSCheck">
+      <wsdl:input message="ns1:PSCheck" name="PSCheck">
+    </wsdl:input>
+      <wsdl:output message="ns1:PSCheckResponse" name="PSCheckResponse">
+    </wsdl:output>
+      <wsdl:fault message="ns1:DriverNotFoundFaultException" name="DriverNotFoundFaultException">
+    </wsdl:fault>
+      <wsdl:fault message="ns1:DataAccessFaultException" name="DataAccessFaultException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

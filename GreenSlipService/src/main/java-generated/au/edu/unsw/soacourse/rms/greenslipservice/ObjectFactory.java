@@ -46,11 +46,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GSCheckFault }
+     * Create an instance of {@link DriverNotFoundFault }
      * 
      */
-    public GSCheckFault createGSCheckFault() {
-        return new GSCheckFault();
+    public DriverNotFoundFault createDriverNotFoundFault() {
+        return new DriverNotFoundFault();
+    }
+
+    /**
+     * Create an instance of {@link DriverAccessFault }
+     * 
+     */
+    public DriverAccessFault createDriverAccessFault() {
+        return new DriverAccessFault();
     }
 
 }

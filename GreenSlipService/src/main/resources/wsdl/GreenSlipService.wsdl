@@ -56,7 +56,7 @@
 		<wsdl:operation name="GSCheck">
 			<soap:operation
 				soapAction="http://rms.soacourse.unsw.edu.au/GreenSlipService/GSCheck" />
-			<wsdl:input name="">
+			<wsdl:input>
 				<soap:body use="literal" />
 			</wsdl:input>
 			<wsdl:output>

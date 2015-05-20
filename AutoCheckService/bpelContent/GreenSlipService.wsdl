@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://rms.soacourse.unsw.edu.au/GreenSlipService/" name="GreenSlipService" targetNamespace="http://rms.soacourse.unsw.edu.au/GreenSlipService/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://rms.soacourse.unsw.edu.au/GreenSlipService/" version="1.0">
+
+  <xs:element name="DriverAccessFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DriverAccessFault" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DriverNotFoundFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="message" type="xs:string"/>
+        <xs:element name="code" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="GSCheckRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastname" type="xs:string"/>
+        <xs:element name="firstname" type="xs:string"/>
+        <xs:element name="regoNumber" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="GSCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastname" type="xs:string"/>
+        <xs:element name="firstname" type="xs:string"/>
+        <xs:element name="regoNumber" type="xs:int"/>
+        <xs:element name="paidFlag" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="GSCheckResponse">
+    <wsdl:part element="ns1:GSCheckResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DataAccessFaultException">
+    <wsdl:part element="ns1:DriverAccessFault" name="DataAccessFaultException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GSCheck">
+    <wsdl:part element="ns1:GSCheckRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DriverNotFoundFaultException">
+    <wsdl:part element="ns1:DriverNotFoundFault" name="DriverNotFoundFaultException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GreenSlipService">
+    <wsdl:operation name="GSCheck">
+      <wsdl:input message="ns1:GSCheck" name="GSCheck">
+    </wsdl:input>
+      <wsdl:output message="ns1:GSCheckResponse" name="GSCheckResponse">
+    </wsdl:output>
+      <wsdl:fault message="ns1:DriverNotFoundFaultException" name="DriverNotFoundFaultException">
+    </wsdl:fault>
+      <wsdl:fault message="ns1:DataAccessFaultException" name="DataAccessFaultException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

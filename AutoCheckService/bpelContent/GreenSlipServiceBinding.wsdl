@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://greenslipservice.rms.soacourse.unsw.edu.au/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://rms.soacourse.unsw.edu.au/GreenSlipService/" name="GreenSlipServiceImplService" targetNamespace="http://greenslipservice.rms.soacourse.unsw.edu.au/">
+  <wsdl:import location="http://localhost:8080/GreenSlipService/greenslip?wsdl=GreenSlipService.wsdl" namespace="http://rms.soacourse.unsw.edu.au/GreenSlipService/">
+    </wsdl:import>
+  <wsdl:binding name="GreenSlipServiceImplServiceSoapBinding" type="ns1:GreenSlipService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GSCheck">
+      <soap:operation soapAction="http://rms.soacourse.unsw.edu.au/GreenSlipService/GSCheck" style="document"/>
+      <wsdl:input name="GSCheck">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GSCheckResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DriverNotFoundFaultException">
+        <soap:fault name="DriverNotFoundFaultException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="DataAccessFaultException">
+        <soap:fault name="DataAccessFaultException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GreenSlipServiceImplService">
+    <wsdl:port binding="tns:GreenSlipServiceImplServiceSoapBinding" name="GreenSlipServiceImplPort">
+      <soap:address location="http://localhost:8080/GreenSlipService/greenslip"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

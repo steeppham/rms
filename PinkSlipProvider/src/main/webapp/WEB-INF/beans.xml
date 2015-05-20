@@ -9,8 +9,8 @@
         <import resource="classpath:META-INF/cxf/cxf.xml" />
 
         <jaxws:endpoint 
-          id="pinkslipprovider" 
+          id="pinkSlipProvider" 
           implementor="au.edu.unsw.soacourse.rms.pinkslipprovivider.PinkSlipProviderImpl" 
-          address="/pinkslipprovider" />
+          address="/pinkslip" />
           
 </beans>

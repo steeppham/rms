@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <definitions name="AutoCheck"
-        targetNamespace="http://rms.soacrouse.unsw.edu/autocheck"
-        xmlns:tns="http://rms.soacrouse.unsw.edu/autocheck"
+        targetNamespace="http://rms.soacourse.unsw.edu.au/autocheck"
+        xmlns:tns="http://rms.soacourse.unsw.edu.au/autocheck"
         xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
         xmlns="http://schemas.xmlsoap.org/wsdl/"
         xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
@@ -15,7 +15,7 @@
      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
     <types>
         <schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
-                targetNamespace="http://rms.soacrouse.unsw.edu/autocheck" 
+                targetNamespace="http://rms.soacourse.unsw.edu.au/autocheck" 
                 xmlns="http://www.w3.org/2001/XMLSchema">
 
             <element name="AutoCheckRequest">
@@ -77,7 +77,7 @@
     		transport="http://schemas.xmlsoap.org/soap/http" />
     	<operation name="process">
     		<soap:operation
-    			soapAction="http://rms.soacrouse.unsw.edu/autocheck/process" />
+    			soapAction="http://rms.soacourse.unsw.edu.au/autocheck/process" />
     		<input>
     			<soap:body use="literal" />
     		</input>

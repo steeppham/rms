@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:autocheck="http://rms.soacourse.unsw.edu.au/autocheck" xmlns:greenslipservice.rms.soacourse.unsw.edu.au="http://greenslipservice.rms.soacourse.unsw.edu.au/">
+  <process name="autocheck:AutoCheck">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="autocheck:AutoCheckService" port="AutoCheckPort"/>
+    </provide>
+    <invoke partnerLink="GSCheckPL">
+      <service name="greenslipservice.rms.soacourse.unsw.edu.au:GreenSlipServiceImplService" port="GreenSlipServiceImplPort"/>
+    </invoke>
+  </process>
+</deploy>

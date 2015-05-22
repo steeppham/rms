@@ -10,7 +10,7 @@
 
         <jaxws:endpoint 
           id="pinkSlipProvider" 
-          implementor="au.edu.unsw.soacourse.rms.pinkslipprovivider.PinkSlipProviderImpl" 
+          implementor="au.edu.unsw.soacourse.rms.pinkslipprovider.PinkSlipProviderImpl" 
           address="/pinkslip" />
           
 </beans>

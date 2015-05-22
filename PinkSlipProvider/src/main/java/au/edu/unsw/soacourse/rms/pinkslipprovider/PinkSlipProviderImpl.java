@@ -1,4 +1,4 @@
-package au.edu.unsw.soacourse.rms.pinkslipprovivider;
+package au.edu.unsw.soacourse.rms.pinkslipprovider;
 
 import javax.jws.WebService;
 

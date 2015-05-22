@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="lastname" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="firstname" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="RegoNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="regoNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="checkedFlag" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -44,7 +44,7 @@ public class PSCheckResponse {
     protected String lastname;
     @XmlElement(required = true)
     protected String firstname;
-    @XmlElement(name = "RegoNumber", required = true)
+    @XmlElement(required = true)
     protected String regoNumber;
     protected boolean checkedFlag;
 

@@ -19,7 +19,7 @@
 					<xsd:sequence>
 						<xsd:element name="lastname" type="xsd:string" />
 						<xsd:element name="firstname" type="xsd:string"></xsd:element>
-						<xsd:element name="RegoNumber" type="xsd:string"></xsd:element>
+						<xsd:element name="regoNumber" type="xsd:string"></xsd:element>
 						<xsd:element name="checkedFlag" type="xsd:boolean"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>

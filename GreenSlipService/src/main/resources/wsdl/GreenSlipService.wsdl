@@ -10,7 +10,7 @@
 					<xsd:sequence>
 						<xsd:element name="lastname" type="xsd:string" />
 						<xsd:element name="firstname" type="xsd:string" />
-						<xsd:element name="regoNumber" type="xsd:int" />
+						<xsd:element name="regoNumber" type="xsd:string" />
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
@@ -19,7 +19,7 @@
 					<xsd:sequence>
 						<xsd:element name="lastname" type="xsd:string" />
 						<xsd:element name="firstname" type="xsd:string" />
-						<xsd:element name="regoNumber" type="xsd:int" />
+						<xsd:element name="regoNumber" type="xsd:string" />
 						<xsd:element name="paidFlag" type="xsd:boolean"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
@@ -28,7 +28,6 @@
 				<xsd:complexType>
 					<xsd:sequence>
 						<xsd:element name="message" type="xsd:string"></xsd:element>
-						<xsd:element name="code" type="xsd:int"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>

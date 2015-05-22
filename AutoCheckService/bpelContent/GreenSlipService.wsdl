@@ -14,7 +14,6 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="message" type="xs:string"/>
-        <xs:element name="code" type="xs:int"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -24,7 +23,7 @@
       <xs:sequence>
         <xs:element name="lastname" type="xs:string"/>
         <xs:element name="firstname" type="xs:string"/>
-        <xs:element name="regoNumber" type="xs:int"/>
+        <xs:element name="regoNumber" type="xs:string"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -34,7 +33,7 @@
       <xs:sequence>
         <xs:element name="lastname" type="xs:string"/>
         <xs:element name="firstname" type="xs:string"/>
-        <xs:element name="regoNumber" type="xs:int"/>
+        <xs:element name="regoNumber" type="xs:string"/>
         <xs:element name="paidFlag" type="xs:boolean"/>
       </xs:sequence>
     </xs:complexType>

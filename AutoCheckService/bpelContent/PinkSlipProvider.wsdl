@@ -23,7 +23,7 @@
       <xs:sequence>
         <xs:element name="lastname" type="xs:string"/>
         <xs:element name="firstname" type="xs:string"/>
-        <xs:element name="RegoNumber" type="xs:int"/>
+        <xs:element name="RegoNumber" type="xs:string"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -33,7 +33,7 @@
       <xs:sequence>
         <xs:element name="lastname" type="xs:string"/>
         <xs:element name="firstname" type="xs:string"/>
-        <xs:element name="RegoNumber" type="xs:int"/>
+        <xs:element name="regoNumber" type="xs:string"/>
         <xs:element name="checkedFlag" type="xs:boolean"/>
       </xs:sequence>
     </xs:complexType>
@@ -44,7 +44,7 @@
       <xs:sequence>
         <xs:element name="lastname" type="xs:string"/>
         <xs:element name="firstname" type="xs:string"/>
-        <xs:element name="RegoNumber" type="xs:int"/>
+        <xs:element name="RegoNumber" type="xs:string"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>

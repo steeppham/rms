@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="lastname" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="firstname" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="regoNumber" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="regoNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="paidFlag" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -44,7 +44,8 @@ public class GSCheckResponse {
     protected String lastname;
     @XmlElement(required = true)
     protected String firstname;
-    protected int regoNumber;
+    @XmlElement(required = true)
+    protected String regoNumber;
     protected boolean paidFlag;
 
     /**
@@ -98,16 +99,24 @@ public class GSCheckResponse {
     /**
      * Gets the value of the regoNumber property.
      * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public int getRegoNumber() {
+    public String getRegoNumber() {
         return regoNumber;
     }
 
     /**
      * Sets the value of the regoNumber property.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public void setRegoNumber(int value) {
+    public void setRegoNumber(String value) {
         this.regoNumber = value;
     }
 

@@ -36,8 +36,8 @@ public class PinkSlipProviderImpl implements PinkSlipProvider {
 	public VehicleAgeResponse vehicleAge(VehicleAgeRequest parameters)
 			throws DriverNotFoundFaultException, DataAccessFaultException {
 		String expression = String
-				.format("Customers/Entry/CarDetails/RegistrationNumber[text()='%s']/../ManufacturedYear/text()",
-						parameters.getRegoNumber());
+				.format("Customers/Entry/Driver/LastName[text()='%s']/../FirstName[text()='%s']/../../CarDetails/RegistrationNumber[text()='%s']/../ManufacturedYear/text()",
+						parameters.getLastname(), parameters.getFirstname(), parameters.getRegoNumber());
 		String age = readDatabase(expression);
 		VehicleAgeResponse response = factory.createVehicleAgeResponse();
 		response.setAge(Integer.parseInt(age));
@@ -49,8 +49,8 @@ public class PinkSlipProviderImpl implements PinkSlipProvider {
 			throws DriverNotFoundFaultException, DataAccessFaultException {
 		
 		String expression = String
-				.format("Customers/Entry/CarDetails/RegistrationNumber[text()='%s']/../../SafetyCheckUpToDate/text()",
-						parameters.getRegoNumber());
+				.format("Customers/Entry/Driver/LastName[text()='%s']/../FirstName[text()='%s']/../../CarDetails/RegistrationNumber[text()='%s']/../../SafetyCheckUpToDate/text()",
+						parameters.getLastname(), parameters.getFirstname(), parameters.getRegoNumber());
 		String safetyCheckUpToDate = readDatabase(expression);
 		boolean checked = safetyCheckUpToDate.equalsIgnoreCase("yes") ? true : false;
 		
@@ -101,7 +101,7 @@ public class PinkSlipProviderImpl implements PinkSlipProvider {
 					+ XML_DATABASE, e);
 		}
 
-		if (result == null) {
+		if (result.isEmpty()) {
 			throw new DriverNotFoundFaultException("Cannot locate driver");
 		}
 		

@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrations>
+   <fuel>
+      <name>Unleaded Petrol</name>
+      <total>248,142</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>157,222</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>61,019</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>2,889</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>213</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>22</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>13</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>18,135</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>1,365</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>7,253</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>7</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>2</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>LPG</name>
+      <total>1,067</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>628</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>437</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Electric/Petrol</name>
+      <total>2,917</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>2,675</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>213</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>24</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>4</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Electricity</name>
+      <total>111</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>106</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>5</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Petrol And LPG (Dual Fuel)</name>
+      <total>229</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>19</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>16</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>7</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>184</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Diesel</name>
+      <total>93,762</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>15,882</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>37,294</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>1,212</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>334</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>452</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>289</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>2</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>34,741</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>2,303</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>964</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>37</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>252</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Diesel And LPG (Dual Fuel)</name>
+      <total>4</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>3</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Diesel &amp; LPT (Torque
+              Topping)</name>
+      <total>46</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>5</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>6</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>2</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>12</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>14</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>2</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>4</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Diesel/NAT</name>
+      <total>4</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Compressed Natural Gas</name>
+      <total>13</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>5</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>8</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Petrol &amp; Compressed Natural
+              Gas</name>
+      <total>1</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Hydrogen</name>
+      <total>7</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>7</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Kerosene</name>
+      <total>1</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Steam (Fuel Oil Powered)</name>
+      <total>3</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>2</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>Unknown</name>
+      <total>93</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>17</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>5</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>49</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>4</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>8</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>6</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>2</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>1</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>0</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+   <fuel>
+      <name>No engine</name>
+      <total>25,337</total>
+      <vehicles>
+         <vehicle>
+            <name>Passenger Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Off-road Vehicles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>People movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Buses</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Mobile Homes</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Motor cycles</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Scooters</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Trucks</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Prime Movers</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Light Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Heavy Plants</name>
+            <total>0</total>
+         </vehicle>
+         <vehicle>
+            <name>Small Trailers</name>
+            <total>12,798</total>
+         </vehicle>
+         <vehicle>
+            <name>Trailers</name>
+            <total>12,539</total>
+         </vehicle>
+      </vehicles>
+   </fuel>
+</registrations>

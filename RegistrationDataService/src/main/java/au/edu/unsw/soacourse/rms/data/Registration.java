@@ -16,6 +16,7 @@ import javax.xml.xquery.XQSequence;
 
 import net.sf.saxon.xqj.SaxonXQDataSource;
 
+
 @Path("/registration")
 public class Registration {
 
@@ -24,8 +25,10 @@ public class Registration {
 	@Path("vehicletype")
 	@Produces(MediaType.TEXT_XML)
 	public String getVehicleType(@QueryParam("sort") String sort) {
-		return "<?xml version=\"1.0\"?>" + "<hello> vehicle type list " + sort
-				+ "</hello>";
+		
+		return xquery("table127.xml", "table127.xq", sort);
+		//return "<?xml version=\"1.0\"?>" + "<hello> vehicle type list " + sort
+		//		+ "</hello>";
 	}
 
 	// Return list of all fuel types
@@ -33,38 +36,10 @@ public class Registration {
 	@Path("fueltype")
 	@Produces(MediaType.TEXT_XML)
 	public String getFuelType(@QueryParam("sort") String sort) {
-		try {
-			 // Use XQJ to execute an XQuery with Saxon HE
-		    XQDataSource ds = new SaxonXQDataSource();
-		    XQConnection conn = ds.getConnection();
-
-		    // InputStream for the XQuery
-		    InputStream query = getClass().getClassLoader().getResourceAsStream(
-		    		"/table126.xq");
-		    
-		    // Create a prepared expression ...
-		    XQPreparedExpression exp = conn.prepareExpression(query);
-
-		    // ... and bind the path to the input document to XQuery variable $input-document
-		    String inputFile = getClass().getClassLoader().getResource("table126.xml").getPath();
-		    exp.bindString(new QName("input-document"), inputFile, null);
-
-		    // Execute the query and ...
-		    XQSequence xqs = exp.executeQuery();
-
-		    // ... print the resulting document to standard out.
-		    xqs.writeSequence(System.out, null);
-
-		    // Clean up (production code should do that in a finally clause!)
-		    xqs.close();
-		    conn.close();
-		    query.close();
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-
-		return "<?xml version=\"1.0\"?>" + "<hello> fuel type list " + sort
-				+ "</hello>";
+		return xquery("table126.xml", "table126.xq", sort);
+		
+		//return "<?xml version=\"1.0\"?>" + "<hello> fuel type list " + sort
+		//		+ "</hello>";
 	}
 
 	// Return list of all fuel types
@@ -106,7 +81,40 @@ public class Registration {
 				+ sort + "</hello>";
 	}
 
-	private void helloword() {
+	private String xquery(String source, String template, String sort) {
+		String output = null;
+		try {
+			 // Use XQJ to execute an XQuery with Saxon HE
+		    XQDataSource ds = new SaxonXQDataSource();
+		    XQConnection conn = ds.getConnection();
 
+		    // InputStream for the XQuery
+		    InputStream query = getClass().getClassLoader().getResourceAsStream(template);
+		    
+		    // Create a prepared expression ...
+		    XQPreparedExpression exp = conn.prepareExpression(query);
+
+		    // ... and bind the path to the input document to XQuery variable $input-document
+		    String inputFile = getClass().getClassLoader().getResource(source).getPath();
+		    exp.bindString(new QName("input-document"), inputFile, null);
+		    if (sort == null || sort.isEmpty()) 
+		    	sort = "none";
+		    exp.bindString(new QName("sort"), sort, null);
+
+		    // Execute the query and ...
+		    XQSequence xqs = exp.executeQuery();
+
+		    // ... print the resulting document to standard out.
+		    //xqs.writeSequence(System.out, null);
+		    output = xqs.getSequenceAsString(null);
+
+		    // Clean up (production code should do that in a finally clause!)
+		    xqs.close();
+		    conn.close();
+		    query.close();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+		return output;
 	}
 }

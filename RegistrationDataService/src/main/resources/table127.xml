@@ -2,15 +2,15 @@
 <registrations>
    <postcode>
       <code>2000</code>
-      <total>4,178</total>
+      <total>4178</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>2,177</total>
+            <total>2177</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>1,474</total>
+            <total>1474</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
@@ -332,7 +332,7 @@
    </postcode>
    <postcode>
       <code>2010</code>
-      <total>1,305</total>
+      <total>1305</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -398,11 +398,11 @@
    </postcode>
    <postcode>
       <code>2011</code>
-      <total>2,439</total>
+      <total>2439</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,786</total>
+            <total>1786</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -464,11 +464,11 @@
    </postcode>
    <postcode>
       <code>2015</code>
-      <total>2,462</total>
+      <total>2462</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,567</total>
+            <total>1567</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -596,11 +596,11 @@
    </postcode>
    <postcode>
       <code>2017</code>
-      <total>2,576</total>
+      <total>2576</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,722</total>
+            <total>1722</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -728,7 +728,7 @@
    </postcode>
    <postcode>
       <code>2019</code>
-      <total>1,139</total>
+      <total>1139</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -794,15 +794,15 @@
    </postcode>
    <postcode>
       <code>2020</code>
-      <total>7,704</total>
+      <total>7704</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>5,500</total>
+            <total>5500</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>1,567</total>
+            <total>1567</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
@@ -1190,7 +1190,7 @@
    </postcode>
    <postcode>
       <code>2026</code>
-      <total>1,088</total>
+      <total>1088</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -1520,7 +1520,7 @@
    </postcode>
    <postcode>
       <code>2031</code>
-      <total>1,126</total>
+      <total>1126</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -1784,7 +1784,7 @@
    </postcode>
    <postcode>
       <code>2035</code>
-      <total>1,110</total>
+      <total>1110</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -1850,7 +1850,7 @@
    </postcode>
    <postcode>
       <code>2036</code>
-      <total>1,046</total>
+      <total>1046</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -2510,7 +2510,7 @@
    </postcode>
    <postcode>
       <code>2046</code>
-      <total>1,329</total>
+      <total>1329</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -2906,7 +2906,7 @@
    </postcode>
    <postcode>
       <code>2060</code>
-      <total>1,294</total>
+      <total>1294</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -3170,7 +3170,7 @@
    </postcode>
    <postcode>
       <code>2064</code>
-      <total>1,259</total>
+      <total>1259</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -3236,11 +3236,11 @@
    </postcode>
    <postcode>
       <code>2065</code>
-      <total>2,135</total>
+      <total>2135</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,314</total>
+            <total>1314</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -3302,11 +3302,11 @@
    </postcode>
    <postcode>
       <code>2066</code>
-      <total>2,546</total>
+      <total>2546</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,034</total>
+            <total>1034</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -3368,11 +3368,11 @@
    </postcode>
    <postcode>
       <code>2067</code>
-      <total>1,809</total>
+      <total>1809</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,160</total>
+            <total>1160</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -3962,7 +3962,7 @@
    </postcode>
    <postcode>
       <code>2076</code>
-      <total>1,062</total>
+      <total>1062</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -4028,11 +4028,11 @@
    </postcode>
    <postcode>
       <code>2077</code>
-      <total>2,539</total>
+      <total>2539</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,459</total>
+            <total>1459</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -4688,7 +4688,7 @@
    </postcode>
    <postcode>
       <code>2088</code>
-      <total>1,588</total>
+      <total>1588</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -5282,7 +5282,7 @@
    </postcode>
    <postcode>
       <code>2099</code>
-      <total>1,631</total>
+      <total>1631</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -5348,11 +5348,11 @@
    </postcode>
    <postcode>
       <code>2100</code>
-      <total>2,360</total>
+      <total>2360</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,217</total>
+            <total>1217</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -6074,7 +6074,7 @@
    </postcode>
    <postcode>
       <code>2112</code>
-      <total>1,508</total>
+      <total>1508</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -6140,15 +6140,15 @@
    </postcode>
    <postcode>
       <code>2113</code>
-      <total>5,247</total>
+      <total>5247</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>2,566</total>
+            <total>2566</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>1,714</total>
+            <total>1714</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
@@ -6206,7 +6206,7 @@
    </postcode>
    <postcode>
       <code>2114</code>
-      <total>1,353</total>
+      <total>1353</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -6602,7 +6602,7 @@
    </postcode>
    <postcode>
       <code>2120</code>
-      <total>1,266</total>
+      <total>1266</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -6668,7 +6668,7 @@
    </postcode>
    <postcode>
       <code>2121</code>
-      <total>1,228</total>
+      <total>1228</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -6734,7 +6734,7 @@
    </postcode>
    <postcode>
       <code>2122</code>
-      <total>1,036</total>
+      <total>1036</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -6998,7 +6998,7 @@
    </postcode>
    <postcode>
       <code>2128</code>
-      <total>1,675</total>
+      <total>1675</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -7394,7 +7394,7 @@
    </postcode>
    <postcode>
       <code>2134</code>
-      <total>1,783</total>
+      <total>1783</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -7592,7 +7592,7 @@
    </postcode>
    <postcode>
       <code>2137</code>
-      <total>1,536</total>
+      <total>1536</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -7724,11 +7724,11 @@
    </postcode>
    <postcode>
       <code>2140</code>
-      <total>2,433</total>
+      <total>2433</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,381</total>
+            <total>1381</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -7790,7 +7790,7 @@
    </postcode>
    <postcode>
       <code>2141</code>
-      <total>1,292</total>
+      <total>1292</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -7856,7 +7856,7 @@
    </postcode>
    <postcode>
       <code>2142</code>
-      <total>1,665</total>
+      <total>1665</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -7988,7 +7988,7 @@
    </postcode>
    <postcode>
       <code>2144</code>
-      <total>1,027</total>
+      <total>1027</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -8054,11 +8054,11 @@
    </postcode>
    <postcode>
       <code>2145</code>
-      <total>2,544</total>
+      <total>2544</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,427</total>
+            <total>1427</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -8186,7 +8186,7 @@
    </postcode>
    <postcode>
       <code>2147</code>
-      <total>1,722</total>
+      <total>1722</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -8252,11 +8252,11 @@
    </postcode>
    <postcode>
       <code>2148</code>
-      <total>3,679</total>
+      <total>3679</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,714</total>
+            <total>1714</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -8318,15 +8318,15 @@
    </postcode>
    <postcode>
       <code>2150</code>
-      <total>5,866</total>
+      <total>5866</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>3,073</total>
+            <total>3073</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>1,715</total>
+            <total>1715</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
@@ -8384,7 +8384,7 @@
    </postcode>
    <postcode>
       <code>2151</code>
-      <total>1,069</total>
+      <total>1069</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -8516,15 +8516,15 @@
    </postcode>
    <postcode>
       <code>2153</code>
-      <total>4,314</total>
+      <total>4314</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>2,059</total>
+            <total>2059</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>1,766</total>
+            <total>1766</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
@@ -8582,11 +8582,11 @@
    </postcode>
    <postcode>
       <code>2154</code>
-      <total>2,711</total>
+      <total>2711</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,482</total>
+            <total>1482</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -8648,11 +8648,11 @@
    </postcode>
    <postcode>
       <code>2155</code>
-      <total>2,420</total>
+      <total>2420</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,167</total>
+            <total>1167</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -9242,7 +9242,7 @@
    </postcode>
    <postcode>
       <code>2164</code>
-      <total>1,551</total>
+      <total>1551</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -9374,7 +9374,7 @@
    </postcode>
    <postcode>
       <code>2166</code>
-      <total>1,237</total>
+      <total>1237</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -9506,7 +9506,7 @@
    </postcode>
    <postcode>
       <code>2168</code>
-      <total>1,036</total>
+      <total>1036</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -9572,15 +9572,15 @@
    </postcode>
    <postcode>
       <code>2170</code>
-      <total>6,202</total>
+      <total>6202</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>3,330</total>
+            <total>3330</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>1,460</total>
+            <total>1460</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
@@ -9638,7 +9638,7 @@
    </postcode>
    <postcode>
       <code>2171</code>
-      <total>1,286</total>
+      <total>1286</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -9968,7 +9968,7 @@
    </postcode>
    <postcode>
       <code>2176</code>
-      <total>1,579</total>
+      <total>1579</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -10232,11 +10232,11 @@
    </postcode>
    <postcode>
       <code>2190</code>
-      <total>2,496</total>
+      <total>2496</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,350</total>
+            <total>1350</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -10892,7 +10892,7 @@
    </postcode>
    <postcode>
       <code>2200</code>
-      <total>1,488</total>
+      <total>1488</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -11420,7 +11420,7 @@
    </postcode>
    <postcode>
       <code>2210</code>
-      <total>1,041</total>
+      <total>1041</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -11816,7 +11816,7 @@
    </postcode>
    <postcode>
       <code>2217</code>
-      <total>1,006</total>
+      <total>1006</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -12014,7 +12014,7 @@
    </postcode>
    <postcode>
       <code>2220</code>
-      <total>1,401</total>
+      <total>1401</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -12608,11 +12608,11 @@
    </postcode>
    <postcode>
       <code>2229</code>
-      <total>3,034</total>
+      <total>3034</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,775</total>
+            <total>1775</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -12674,7 +12674,7 @@
    </postcode>
    <postcode>
       <code>2230</code>
-      <total>1,164</total>
+      <total>1164</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -12806,15 +12806,15 @@
    </postcode>
    <postcode>
       <code>2232</code>
-      <total>3,569</total>
+      <total>3569</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,945</total>
+            <total>1945</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>1,095</total>
+            <total>1095</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
@@ -12872,7 +12872,7 @@
    </postcode>
    <postcode>
       <code>2233</code>
-      <total>1,164</total>
+      <total>1164</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -12938,7 +12938,7 @@
    </postcode>
    <postcode>
       <code>2234</code>
-      <total>1,546</total>
+      <total>1546</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -13004,15 +13004,15 @@
    </postcode>
    <postcode>
       <code>2250</code>
-      <total>4,885</total>
+      <total>4885</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>2,428</total>
+            <total>2428</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>1,294</total>
+            <total>1294</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
@@ -13070,7 +13070,7 @@
    </postcode>
    <postcode>
       <code>2251</code>
-      <total>1,225</total>
+      <total>1225</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -13334,11 +13334,11 @@
    </postcode>
    <postcode>
       <code>2259</code>
-      <total>2,805</total>
+      <total>2805</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,115</total>
+            <total>1115</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -13400,7 +13400,7 @@
    </postcode>
    <postcode>
       <code>2260</code>
-      <total>1,099</total>
+      <total>1099</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -13466,7 +13466,7 @@
    </postcode>
    <postcode>
       <code>2261</code>
-      <total>1,933</total>
+      <total>1933</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -13928,7 +13928,7 @@
    </postcode>
    <postcode>
       <code>2280</code>
-      <total>1,259</total>
+      <total>1259</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -14126,7 +14126,7 @@
    </postcode>
    <postcode>
       <code>2283</code>
-      <total>1,020</total>
+      <total>1020</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -14258,7 +14258,7 @@
    </postcode>
    <postcode>
       <code>2285</code>
-      <total>1,787</total>
+      <total>1787</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -14390,7 +14390,7 @@
    </postcode>
    <postcode>
       <code>2287</code>
-      <total>1,465</total>
+      <total>1465</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -14522,7 +14522,7 @@
    </postcode>
    <postcode>
       <code>2290</code>
-      <total>1,675</total>
+      <total>1675</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -15182,7 +15182,7 @@
    </postcode>
    <postcode>
       <code>2300</code>
-      <total>1,111</total>
+      <total>1111</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -15314,7 +15314,7 @@
    </postcode>
    <postcode>
       <code>2303</code>
-      <total>1,022</total>
+      <total>1022</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -16238,7 +16238,7 @@
    </postcode>
    <postcode>
       <code>2320</code>
-      <total>2,256</total>
+      <total>2256</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -16370,7 +16370,7 @@
    </postcode>
    <postcode>
       <code>2322</code>
-      <total>1,482</total>
+      <total>1482</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -16436,7 +16436,7 @@
    </postcode>
    <postcode>
       <code>2323</code>
-      <total>1,553</total>
+      <total>1553</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -16502,7 +16502,7 @@
    </postcode>
    <postcode>
       <code>2324</code>
-      <total>1,111</total>
+      <total>1111</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -16568,7 +16568,7 @@
    </postcode>
    <postcode>
       <code>2325</code>
-      <total>1,508</total>
+      <total>1508</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -16898,7 +16898,7 @@
    </postcode>
    <postcode>
       <code>2330</code>
-      <total>1,969</total>
+      <total>1969</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -17030,7 +17030,7 @@
    </postcode>
    <postcode>
       <code>2333</code>
-      <total>1,203</total>
+      <total>1203</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -17492,11 +17492,11 @@
    </postcode>
    <postcode>
       <code>2340</code>
-      <total>2,809</total>
+      <total>2809</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,026</total>
+            <total>1026</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -21386,7 +21386,7 @@
    </postcode>
    <postcode>
       <code>2430</code>
-      <total>1,504</total>
+      <total>1504</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -21782,11 +21782,11 @@
    </postcode>
    <postcode>
       <code>2444</code>
-      <total>2,341</total>
+      <total>2341</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,056</total>
+            <total>1056</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -22178,11 +22178,11 @@
    </postcode>
    <postcode>
       <code>2450</code>
-      <total>2,190</total>
+      <total>2190</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,032</total>
+            <total>1032</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -23564,7 +23564,7 @@
    </postcode>
    <postcode>
       <code>2478</code>
-      <total>1,074</total>
+      <total>1074</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -23696,7 +23696,7 @@
    </postcode>
    <postcode>
       <code>2480</code>
-      <total>2,107</total>
+      <total>2107</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -24092,7 +24092,7 @@
    </postcode>
    <postcode>
       <code>2486</code>
-      <total>1,014</total>
+      <total>1014</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -24422,11 +24422,11 @@
    </postcode>
    <postcode>
       <code>2500</code>
-      <total>2,230</total>
+      <total>2230</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,289</total>
+            <total>1289</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -25214,7 +25214,7 @@
    </postcode>
    <postcode>
       <code>2527</code>
-      <total>1,229</total>
+      <total>1229</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -25346,7 +25346,7 @@
    </postcode>
    <postcode>
       <code>2529</code>
-      <total>1,269</total>
+      <total>1269</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -25412,7 +25412,7 @@
    </postcode>
    <postcode>
       <code>2530</code>
-      <total>1,266</total>
+      <total>1266</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -25940,7 +25940,7 @@
    </postcode>
    <postcode>
       <code>2540</code>
-      <total>1,686</total>
+      <total>1686</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -26006,7 +26006,7 @@
    </postcode>
    <postcode>
       <code>2541</code>
-      <total>1,475</total>
+      <total>1475</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -26798,11 +26798,11 @@
    </postcode>
    <postcode>
       <code>2560</code>
-      <total>3,274</total>
+      <total>3274</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,560</total>
+            <total>1560</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -27062,11 +27062,11 @@
    </postcode>
    <postcode>
       <code>2566</code>
-      <total>2,409</total>
+      <total>2409</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,231</total>
+            <total>1231</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -27128,7 +27128,7 @@
    </postcode>
    <postcode>
       <code>2567</code>
-      <total>2,027</total>
+      <total>2027</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -27326,7 +27326,7 @@
    </postcode>
    <postcode>
       <code>2570</code>
-      <total>1,776</total>
+      <total>1776</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -27986,7 +27986,7 @@
    </postcode>
    <postcode>
       <code>2580</code>
-      <total>1,846</total>
+      <total>1846</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -28844,7 +28844,7 @@
    </postcode>
    <postcode>
       <code>2620</code>
-      <total>2,026</total>
+      <total>2026</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -29768,7 +29768,7 @@
    </postcode>
    <postcode>
       <code>2640</code>
-      <total>1,252</total>
+      <total>1252</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -30428,11 +30428,11 @@
    </postcode>
    <postcode>
       <code>2650</code>
-      <total>3,642</total>
+      <total>3642</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,433</total>
+            <total>1433</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -31616,7 +31616,7 @@
    </postcode>
    <postcode>
       <code>2680</code>
-      <total>1,058</total>
+      <total>1058</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -33860,7 +33860,7 @@
    </postcode>
    <postcode>
       <code>2745</code>
-      <total>1,399</total>
+      <total>1399</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -33926,7 +33926,7 @@
    </postcode>
    <postcode>
       <code>2747</code>
-      <total>1,488</total>
+      <total>1488</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -34124,11 +34124,11 @@
    </postcode>
    <postcode>
       <code>2750</code>
-      <total>3,624</total>
+      <total>3624</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,999</total>
+            <total>1999</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -34454,7 +34454,7 @@
    </postcode>
    <postcode>
       <code>2756</code>
-      <total>1,752</total>
+      <total>1752</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -34652,7 +34652,7 @@
    </postcode>
    <postcode>
       <code>2759</code>
-      <total>1,317</total>
+      <total>1317</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -34718,7 +34718,7 @@
    </postcode>
    <postcode>
       <code>2760</code>
-      <total>1,187</total>
+      <total>1187</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -34784,7 +34784,7 @@
    </postcode>
    <postcode>
       <code>2761</code>
-      <total>1,011</total>
+      <total>1011</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -34916,7 +34916,7 @@
    </postcode>
    <postcode>
       <code>2763</code>
-      <total>1,141</total>
+      <total>1141</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -35180,7 +35180,7 @@
    </postcode>
    <postcode>
       <code>2768</code>
-      <total>1,142</total>
+      <total>1142</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -35312,7 +35312,7 @@
    </postcode>
    <postcode>
       <code>2770</code>
-      <total>1,353</total>
+      <total>1353</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -36632,11 +36632,11 @@
    </postcode>
    <postcode>
       <code>2795</code>
-      <total>2,673</total>
+      <total>2673</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,015</total>
+            <total>1015</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -36896,11 +36896,11 @@
    </postcode>
    <postcode>
       <code>2800</code>
-      <total>3,365</total>
+      <total>3365</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,181</total>
+            <total>1181</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -38018,7 +38018,7 @@
    </postcode>
    <postcode>
       <code>2830</code>
-      <total>2,662</total>
+      <total>2662</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -39140,7 +39140,7 @@
    </postcode>
    <postcode>
       <code>2850</code>
-      <total>1,105</total>
+      <total>1105</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -40394,11 +40394,11 @@
    </postcode>
    <postcode>
       <code>9999</code>
-      <total>3,424</total>
+      <total>3424</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>1,899</total>
+            <total>1899</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>

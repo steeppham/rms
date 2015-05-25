@@ -25,7 +25,7 @@
 				<xsl:value-of select="x:th" />
 			</code>
 			<total>
-				<xsl:value-of select="x:td[1]" />
+				<xsl:value-of select="translate(x:td[1],',','')" />
 			</total>
 			<vehicles>
 				<xsl:for-each select="x:td[position() != 1]">
@@ -36,7 +36,7 @@
 								select="/x:html/x:body/x:div/x:div/x:div/x:table/x:thead/x:tr[2]/x:th[$i]" />
 						</name>
 						<total>
-							<xsl:value-of select="." />
+							<xsl:value-of  select="translate(.,',','')" />
 						</total>
 					</vehicle>
 				</xsl:for-each>

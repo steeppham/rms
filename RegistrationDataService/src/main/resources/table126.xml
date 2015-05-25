@@ -2,19 +2,19 @@
 <registrations>
    <fuel>
       <name>Unleaded Petrol</name>
-      <total>248,142</total>
+      <total>248142</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>157,222</total>
+            <total>157222</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>61,019</total>
+            <total>61019</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
-            <total>2,889</total>
+            <total>2889</total>
          </vehicle>
          <vehicle>
             <name>Small Buses</name>
@@ -30,15 +30,15 @@
          </vehicle>
          <vehicle>
             <name>Motor cycles</name>
-            <total>18,135</total>
+            <total>18135</total>
          </vehicle>
          <vehicle>
             <name>Scooters</name>
-            <total>1,365</total>
+            <total>1365</total>
          </vehicle>
          <vehicle>
             <name>Light Trucks</name>
-            <total>7,253</total>
+            <total>7253</total>
          </vehicle>
          <vehicle>
             <name>Heavy Trucks</name>
@@ -68,7 +68,7 @@
    </fuel>
    <fuel>
       <name>LPG</name>
-      <total>1,067</total>
+      <total>1067</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -134,11 +134,11 @@
    </fuel>
    <fuel>
       <name>Electric/Petrol</name>
-      <total>2,917</total>
+      <total>2917</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>2,675</total>
+            <total>2675</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
@@ -332,19 +332,19 @@
    </fuel>
    <fuel>
       <name>Diesel</name>
-      <total>93,762</total>
+      <total>93762</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
-            <total>15,882</total>
+            <total>15882</total>
          </vehicle>
          <vehicle>
             <name>Off-road Vehicles</name>
-            <total>37,294</total>
+            <total>37294</total>
          </vehicle>
          <vehicle>
             <name>People movers</name>
-            <total>1,212</total>
+            <total>1212</total>
          </vehicle>
          <vehicle>
             <name>Small Buses</name>
@@ -368,11 +368,11 @@
          </vehicle>
          <vehicle>
             <name>Light Trucks</name>
-            <total>34,741</total>
+            <total>34741</total>
          </vehicle>
          <vehicle>
             <name>Heavy Trucks</name>
-            <total>2,303</total>
+            <total>2303</total>
          </vehicle>
          <vehicle>
             <name>Prime Movers</name>
@@ -994,7 +994,7 @@
    </fuel>
    <fuel>
       <name>No engine</name>
-      <total>25,337</total>
+      <total>25337</total>
       <vehicles>
          <vehicle>
             <name>Passenger Vehicles</name>
@@ -1050,11 +1050,11 @@
          </vehicle>
          <vehicle>
             <name>Small Trailers</name>
-            <total>12,798</total>
+            <total>12798</total>
          </vehicle>
          <vehicle>
             <name>Trailers</name>
-            <total>12,539</total>
+            <total>12539</total>
          </vehicle>
       </vehicles>
    </fuel>

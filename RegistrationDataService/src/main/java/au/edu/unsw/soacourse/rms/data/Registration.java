@@ -25,10 +25,9 @@ public class Registration {
 	@Path("vehicletype")
 	@Produces(MediaType.TEXT_XML)
 	public String getVehicleType(@QueryParam("sort") String sort) {
-		
-		return xquery("table127.xml", "table127.xq", sort);
-		//return "<?xml version=\"1.0\"?>" + "<hello> vehicle type list " + sort
-		//		+ "</hello>";
+		if (sort == null)
+			sort = "none";
+		return xquery("table127.xml", "table127.xq", sort, null);
 	}
 
 	// Return list of all fuel types
@@ -36,52 +35,54 @@ public class Registration {
 	@Path("fueltype")
 	@Produces(MediaType.TEXT_XML)
 	public String getFuelType(@QueryParam("sort") String sort) {
-		return xquery("table126.xml", "table126.xq", sort);
-		
-		//return "<?xml version=\"1.0\"?>" + "<hello> fuel type list " + sort
-		//		+ "</hello>";
+		if (sort == null)
+			sort = "none";
+		return xquery("table126.xml", "table126.xq", sort, null);
 	}
 
-	// Return list of all fuel types
+	// Return new registrations by postcodes
 	@GET
 	@Path("postcode")
 	@Produces(MediaType.TEXT_XML)
 	public String getAllPostcode(@QueryParam("sort") String sort) {
-		return "<?xml version=\"1.0\"?>" + "<hello>all postcode " + sort
-				+ "</hello>";
+		if (sort == null)
+			sort = "none";
+		return xquery("table127.xml", "table127a.xq", sort, ".*");
 	}
 
-	// Return list of all fuel types
+	// Return new registrations by postcodes
 	@GET
 	@Path("postcode/{code}")
 	@Produces(MediaType.TEXT_XML)
 	public String getPostcode(@PathParam("code") String code,
 			@QueryParam("sort") String sort) {
-		return "<?xml version=\"1.0\"?>" + "<hello> postcode " + code + " "
-				+ sort + "</hello>";
-
+		if (sort == null)
+			sort = "none";
+		return xquery("table127.xml", "table127a.xq", sort, code);
 	}
 
-	// Return list of all fuel types
+	// Return new registrations by fuel type
 	@GET
 	@Path("fuel")
 	@Produces(MediaType.TEXT_XML)
 	public String getAllFuel(@QueryParam("sort") String sort) {
-		return "<?xml version=\"1.0\"?>" + "<hello> all fuel " + sort
-				+ "</hello>";
+		if (sort == null)
+			sort = "none";
+		return xquery("table126.xml", "table126_reg.xq", sort, ".*");
 	}
 
-	// Return list of all fuel types
+	// Return new registrations by fuel type
 	@GET
 	@Path("fuel/{fueltype}")
 	@Produces(MediaType.TEXT_XML)
 	public String getFuel(@PathParam("fueltype") String fuelType,
 			@QueryParam("sort") String sort) {
-		return "<?xml version=\"1.0\"?>" + "<hello> fuel " + fuelType + " "
-				+ sort + "</hello>";
+		if (sort == null)
+			sort = "none";
+		return xquery("table126.xml", "table126_reg.xq", sort, fuelType);
 	}
 
-	private String xquery(String source, String template, String sort) {
+	private String xquery(String source, String template, String sort, String pattern) {
 		String output = null;
 		try {
 			 // Use XQJ to execute an XQuery with Saxon HE
@@ -97,9 +98,10 @@ public class Registration {
 		    // ... and bind the path to the input document to XQuery variable $input-document
 		    String inputFile = getClass().getClassLoader().getResource(source).getPath();
 		    exp.bindString(new QName("input-document"), inputFile, null);
-		    if (sort == null || sort.isEmpty()) 
-		    	sort = "none";
-		    exp.bindString(new QName("sort"), sort, null);
+		    if (sort != null && !sort.isEmpty()) 
+		    	exp.bindString(new QName("sort"), sort, null);
+		    if (pattern != null && !pattern.isEmpty())
+		    	exp.bindString(new QName("pattern"), pattern, null);
 
 		    // Execute the query and ...
 		    XQSequence xqs = exp.executeQuery();

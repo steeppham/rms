@@ -10,7 +10,11 @@
     <plnk:partnerLinkType name="GreenSlipCheckType">
     <plnk:role name="GreenSlipProvider" portType="wsdl:GreenSlipService"/>
   </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="PinkSlipType">
+    <plnk:role name="PinkSlipProvider" portType="wsdl1:PinkSlipProvider"/>
+  </plnk:partnerLinkType>
     <import location="GreenSlipService.wsdl" namespace="http://rms.soacourse.unsw.edu.au/GreenSlipService/"/>
+    <import location="PinkSlipProvider.wsdl" namespace="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/"/>
     <types>
         <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://rms.soacourse.unsw.edu.au/autocheck">
 

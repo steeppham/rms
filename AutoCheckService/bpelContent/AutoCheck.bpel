@@ -166,10 +166,8 @@
                             <bpel:to variable="output" part="payload"></bpel:to>
                         </bpel:copy>
                         <bpel:copy>
-                            <bpel:from part="parameters" variable="gsCheckOutput">
-                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                                    <![CDATA[regoNumber]]>
-                                </bpel:query>
+                            <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                <![CDATA['Green Slip Provider Called - Payment Check Failed']]>
                             </bpel:from>
                             <bpel:to part="payload" variable="output">
                                 <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>

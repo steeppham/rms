@@ -10,7 +10,7 @@
   </extensions>
   <extensions>
     <extendedObject href="AutoCheck.bpel#/"/>
-    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1432654173000"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1432656030000"/>
   </extensions>
   <extensions>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension" width="381" height="402"/>
@@ -298,7 +298,7 @@
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@else/@activity/@activities.0/@copy.1"/>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@else/@activity/@activities.0/@copy.3"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
@@ -306,11 +306,55 @@
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@activity/@activities.0/@copy.1"/>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@activity/@activities.0/@copy.3"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
     <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@else/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@else/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.0/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.0/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@else/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@else/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@else/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.3/@activity/@activities.2/@else/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="AutoCheck.bpel#//@activity/@activities.1/@copy.4"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
 </extensionmodel:ExtensionMap>

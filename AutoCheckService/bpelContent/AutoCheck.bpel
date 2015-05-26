@@ -131,6 +131,27 @@
                     <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[regoNumber]]></bpel:query>
                 </bpel:to>
             </bpel:copy>
+            <bpel:copy>
+                <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <![CDATA['']]>
+                </bpel:from>
+                <bpel:to variable="result"></bpel:to>
+            </bpel:copy>
         </bpel:assign>
         <bpel:invoke name="CheckGreenSlip" partnerLink="GreenSlipPartnerLink" operation="GSCheck" portType="ns:GreenSlipService" inputVariable="gsCheckInput" outputVariable="gsCheckOutput">
         </bpel:invoke>
@@ -138,6 +159,7 @@
             <bpel:condition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[$gsCheckOutput.parameters/paidFlag="true"]]></bpel:condition>
             <bpel:sequence>
                 <bpel:assign validate="no" name="Assign1">
+                    
                     
                     
                     
@@ -183,6 +205,55 @@
                         </bpel:from>
                         <bpel:to part="parameters" variable="psVehicleAgeInput">
                             <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[regoNumber]]></bpel:query>
+                        </bpel:to>
+                    </bpel:copy>
+                    <bpel:copy>
+                        <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <![CDATA[concat($result, 'Green Slip Provider - Payment Check Passed\n')]]>
+                        </bpel:from>
+                        <bpel:to variable="result">
                         </bpel:to>
                     </bpel:copy>
                 </bpel:assign>
@@ -232,6 +303,133 @@
                                     <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[regoNumber]]></bpel:query>
                                 </bpel:to>
                             </bpel:copy>
+                            <bpel:copy>
+                                <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <![CDATA[concat($result, 'Pink Slip Provider (Vehicle Age) - Vehicle is more than 5 years old\n')]]>
+                                </bpel:from>
+                                <bpel:to variable="result"></bpel:to>
+                            </bpel:copy>
                         </bpel:assign>
                         <bpel:invoke name="CheckPinkSlip" partnerLink="PinkSlipPartnerLink" operation="PSCheck" portType="ns1:PinkSlipProvider" inputVariable="psCheckInput" outputVariable="psCheckOutput"></bpel:invoke>
                         <bpel:if name="Checked">
@@ -245,8 +443,9 @@
 </bpel:literal></bpel:from>
                                         <bpel:to variable="output" part="payload"></bpel:to>
                                     </bpel:copy>
-                                    <bpel:copy>
-                                        <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                    
+                                    
+                                    <bpel:copy><bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
                                             
                                             
                                             
@@ -299,40 +498,35 @@
                                             
                                             
                                             
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <![CDATA['Pink Slip Provider called - Payment check passed']]>
+                                            <![CDATA[concat($result, 'Pink Slip Provider (Check) - Payement check passed\n')]]>
                                         </bpel:from>
-                                        <bpel:to part="payload" variable="output">
-                                            <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
+                                        <bpel:to variable="result"></bpel:to>
+                                    
+                                    </bpel:copy>
+                                    
+                                    
+                                    <bpel:copy><bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <![CDATA[concat($result, 'Result - Approved\n')]]>
+                                        </bpel:from>
+                                        <bpel:to variable="result"></bpel:to>
+                                    
+                                    </bpel:copy>
+                                    <bpel:copy>
+                                        <bpel:from variable="result"></bpel:from><bpel:to part="payload" variable="output">
+                                            <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                                <![CDATA[tns:result]]>
+                                            </bpel:query>
                                         </bpel:to>
+                                    
+                                    
                                     </bpel:copy>
                                 </bpel:assign>
                                 <bpel:reply name="Reply" partnerLink="client" operation="check" portType="tns:AutoCheck" variable="output"></bpel:reply>
@@ -347,8 +541,9 @@
 </bpel:literal></bpel:from>
                                             <bpel:to variable="output" part="payload"></bpel:to>
                                         </bpel:copy>
-                                        <bpel:copy>
-                                            <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                        
+                                        
+                                        <bpel:copy><bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
                                                 
                                                 
                                                 
@@ -396,29 +591,25 @@
                                                 
                                                 
                                                 
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                <![CDATA['Pink Slip provider called - Payment check failed']]>
+                                                <![CDATA[concat($result, 'Pink Slip Provider (Check) - Payement check failed\n')]]>
                                             </bpel:from>
-                                            <bpel:to part="payload" variable="output">
+                                            <bpel:to variable="result"></bpel:to>
+                                        
+                                        </bpel:copy>
+                                        
+                                        
+                                        <bpel:copy><bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                                <![CDATA[concat($result, 'Result - Rejected\n')]]>
+                                            </bpel:from>
+                                            <bpel:to variable="result"></bpel:to>
+                                        
+                                        </bpel:copy>
+                                        <bpel:copy>
+                                            <bpel:from variable="result"></bpel:from><bpel:to part="payload" variable="output">
                                                 <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
                                             </bpel:to>
+                                        
+                                        
                                         </bpel:copy>
                                     </bpel:assign>
                                     <bpel:reply name="Reply3" partnerLink="client" operation="check" portType="tns:AutoCheck" variable="output"></bpel:reply>
@@ -500,8 +691,96 @@
                                         
                                         
                                         
-                                        <![CDATA['Pink Slip Provider Called - Vehicle is less than 5 years old']]>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <![CDATA[concat($result, 'Pink Slip Provider (Vehicle Age) - Vehicle is less than 5 years old\n')]]>
                                     </bpel:from>
+                                    <bpel:to part="payload" variable="output">
+                                        <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
+                                    </bpel:to>
+                                </bpel:copy>
+                                <bpel:copy>
+                                    <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <![CDATA[concat($result, 'Result - Approved\n')]]>
+                                    </bpel:from>
+                                    <bpel:to variable="result"></bpel:to>
+                                </bpel:copy>
+                                <bpel:copy>
+                                    <bpel:from variable="result"></bpel:from>
                                     <bpel:to part="payload" variable="output">
                                         <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
                                     </bpel:to>
@@ -514,8 +793,7 @@
                 
                 
             </bpel:sequence>
-            <bpel:else>
-                <bpel:sequence>
+            <bpel:else><bpel:sequence>
                     
                     <bpel:assign validate="no" name="Assign2">
                         
@@ -527,10 +805,135 @@
 </bpel:literal></bpel:from>
                             <bpel:to variable="output" part="payload"></bpel:to>
                         </bpel:copy>
+                        
+                        
+                        
+                        
                         <bpel:copy>
                             <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                                <![CDATA['Green Slip Provider Called - Payment Check Failed']]>
-                            </bpel:from>
+                            
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <![CDATA[concat($result, 'Green Slip Provider - Payment Check Failed\n')]]>
+                            </bpel:from><bpel:to variable="result">
+                            </bpel:to>
+                        
+                        
+                        </bpel:copy>
+                        <bpel:copy>
+                            <bpel:from expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            
+                                
+                                
+                                
+                                
+                                
+                                <![CDATA[concat($result, 'Result - Rejected\n')]]>
+                            </bpel:from><bpel:to variable="result"></bpel:to>
+                        
+                        
+                        </bpel:copy>
+                        <bpel:copy>
+                            <bpel:from variable="result"></bpel:from>
                             <bpel:to part="payload" variable="output">
                                 <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
                             </bpel:to>
@@ -541,6 +944,7 @@
                     
                     
                 </bpel:sequence>
+            
             </bpel:else>
         </bpel:if>
         

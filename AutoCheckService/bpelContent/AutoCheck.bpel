@@ -23,12 +23,11 @@
 		<!-- The 'client' role represents the requester of this service. -->
 		<bpel:partnerLink name="client" partnerLinkType="tns:AutoCheck"
 			myRole="AutoCheckProvider" />
-		<bpel:partnerLink name="GSCheckPL" partnerLinkType="tns:GSCheckPLType"
-			partnerRole="GreenSlip"></bpel:partnerLink>
-		<bpel:partnerLink name="PSCheckPL" partnerLinkType="tns:PSCheckPLType"
-			partnerRole="pinkslip"></bpel:partnerLink>
+		
+		
 
-        <bpel:partnerLink name="PSVehicleAgePL" partnerLinkType="tns:PSVehicleAgePLType" partnerRole="pinkslip"></bpel:partnerLink>
+        
+        <bpel:partnerLink name="GreenSlipPartnerLink" partnerLinkType="tns:GreenSlipCheckType" partnerRole="GreenSlipProvider"></bpel:partnerLink>
     </bpel:partnerLinks>
 
 	<!-- ================================================================= -->
@@ -41,8 +40,8 @@
 
 		<!-- Reference to the message that will be returned to the requester -->
 		<bpel:variable name="output" messageType="tns:AutoCheckResponseMessage" />
-		<bpel:variable name="GSCheckPLResponse" messageType="ns:GSCheckResponse"></bpel:variable>
-		<bpel:variable name="GSCheckPLRequest" messageType="ns:GSCheck"></bpel:variable>
+		
+		
 
 
 
@@ -50,12 +49,21 @@
 
 
 
-		<bpel:variable name="PSCheckPLResponse" messageType="ns1:PSCheckResponse"></bpel:variable>
-		<bpel:variable name="PSCheckPLRequest" messageType="ns1:PSCheck"></bpel:variable>
+		
+		
 
 
-        <bpel:variable name="PSVehicleAgePLResponse" messageType="ns1:VehicleAgeResponse"></bpel:variable>
-        <bpel:variable name="PSVehicleAgePLRequest" messageType="ns1:VehicleAge"></bpel:variable>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <bpel:variable name="gsCheckOutput" messageType="ns:GSCheckResponse"></bpel:variable>
+        <bpel:variable name="gsCheckInput" messageType="ns:GSCheck"></bpel:variable>
     </bpel:variables>
 
 	<!-- ================================================================= -->
@@ -63,131 +71,9 @@
 	<!-- Set of activities coordinating the flow of messages across the -->
 	<!-- services integrated within this business process -->
 	<!-- ================================================================= -->
-    <bpel:flow name="Flow">
-        <bpel:links><bpel:link name="link1"></bpel:link>
-			<bpel:link name="link2"></bpel:link>
-			<bpel:link name="link3"></bpel:link>
-			<bpel:link name="link4"></bpel:link>
-			<bpel:link name="link5"></bpel:link>
-			
-			
-			
-		
-            <bpel:link name="link6"></bpel:link>
-            <bpel:link name="link7"></bpel:link>
-            <bpel:link name="link8"></bpel:link>
-        </bpel:links><bpel:receive name="Receive" partnerLink="client" operation="check" portType="tns:AutoCheck" createInstance="yes" variable="input">
-			<bpel:sources>
-				<bpel:source linkName="link1"></bpel:source>
-			</bpel:sources>
-		</bpel:receive>
-		<bpel:reply name="Reply" partnerLink="client" operation="check" portType="tns:AutoCheck" variable="output">
-			<bpel:targets>
-				<bpel:target linkName="link4"></bpel:target>
-				
-                <bpel:target linkName="link8"></bpel:target>
-            </bpel:targets>
-		</bpel:reply>
-		<bpel:invoke name="Invoke" partnerLink="GSCheckPL" operation="GSCheck" portType="ns:GreenSlipService" inputVariable="GSCheckPLRequest" outputVariable="GSCheckPLResponse">
-			<bpel:targets>
-				<bpel:target linkName="link2"></bpel:target>
-			</bpel:targets>
-			<bpel:sources>
-				<bpel:source linkName="link3">
-					<bpel:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[$GSCheckPLResponse.parameters/paidFlag = 'false']]></bpel:transitionCondition>
-				</bpel:source>
-				<bpel:source linkName="link5">
-					<bpel:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[$GSCheckPLResponse.parameters/paidFlag = 'true']]></bpel:transitionCondition>
-				</bpel:source>
-			</bpel:sources>
-		</bpel:invoke>
-		<bpel:assign validate="no" name="Assign">
-			<bpel:copy>
-				<bpel:from>
-					<bpel:literal>
-						<ns1:GSCheckRequest xmlns:ns1="http://rms.soacourse.unsw.edu.au/GreenSlipService/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-							<lastname>lastname</lastname>
-							<firstname>firstname</firstname>
-							<regoNumber>0</regoNumber>
-						</ns1:GSCheckRequest>
-					</bpel:literal>
-				</bpel:from>
-				<bpel:to variable="GSCheckPLRequest" part="parameters"></bpel:to>
-			</bpel:copy>
-			<bpel:copy>
-				<bpel:from part="payload" variable="input">
-					<bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                        <![CDATA[tns:lastname]]>
-					</bpel:query>
-				</bpel:from>
-				<bpel:to part="parameters" variable="GSCheckPLRequest">
-					<bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[lastname]]></bpel:query>
-				</bpel:to>
-			</bpel:copy>
-			<bpel:copy>
-				<bpel:from part="payload" variable="input">
-					<bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                        <![CDATA[tns:firstname]]>
-					</bpel:query>
-				</bpel:from>
-				<bpel:to part="parameters" variable="GSCheckPLRequest">
-					<bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[firstname]]></bpel:query>
-				</bpel:to>
-			</bpel:copy>
-			<bpel:copy>
-				<bpel:from part="payload" variable="input">
-					<bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                        <![CDATA[tns:regoNumber]]>
-					</bpel:query>
-				</bpel:from>
-				<bpel:to part="parameters" variable="GSCheckPLRequest">
-					<bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[regoNumber]]></bpel:query>
-				</bpel:to>
-			</bpel:copy>
-			<bpel:targets>
-				<bpel:target linkName="link1"></bpel:target>
-			</bpel:targets>
-			<bpel:sources>
-				<bpel:source linkName="link2"></bpel:source>
-			</bpel:sources>
-		</bpel:assign>
-		<bpel:assign validate="no" name="Assign1">
-			<bpel:copy>
-				<bpel:from>
-					<bpel:literal>
-						<tns:AutoCheckResponse xmlns:tns="http://rms.soacourse.unsw.edu.au/autocheck" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-							<tns:result>tns:result</tns:result>
-						</tns:AutoCheckResponse>
-					</bpel:literal>
-				</bpel:from>
-				<bpel:to variable="output" part="payload"></bpel:to>
-			</bpel:copy>
-			<bpel:copy>
-				<bpel:from part="parameters" variable="GSCheckPLResponse">
-					<bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                        <![CDATA[paidFlag]]>
-					</bpel:query>
-				</bpel:from>
-				<bpel:to part="payload" variable="output">
-					<bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
-				</bpel:to>
-			</bpel:copy>
-			<bpel:targets>
-				<bpel:target linkName="link3"></bpel:target>
-			</bpel:targets>
-			<bpel:sources>
-				<bpel:source linkName="link4"></bpel:source>
-			</bpel:sources>
-		</bpel:assign>
-		<bpel:assign validate="no" name="Assign2">
-
-
-
-
-
-			<bpel:targets>
-				<bpel:target linkName="link5"></bpel:target>
-			</bpel:targets>
+    <bpel:sequence name="Main">
+        <bpel:receive name="Receive" partnerLink="client" operation="check" portType="tns:AutoCheck" variable="input" createInstance="yes"></bpel:receive>
+        <bpel:assign validate="no" name="Assign">
             
             
             
@@ -197,81 +83,107 @@
             
             
             
-            <bpel:sources>
-                <bpel:source linkName="link6"></bpel:source>
-            </bpel:sources>
+            
             <bpel:copy>
-                <bpel:from><bpel:literal><ns1:VehicleAgeRequest xmlns:ns1="http://rms.soacourse.unsw.edu.au/PinkSlipProvider/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <bpel:from><bpel:literal><ns1:GSCheckRequest xmlns:ns1="http://rms.soacourse.unsw.edu.au/GreenSlipService/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <lastname>lastname</lastname>
   <firstname>firstname</firstname>
-  <RegoNumber>0</RegoNumber>
-</ns1:VehicleAgeRequest>
+  <regoNumber>regoNumber</regoNumber>
+</ns1:GSCheckRequest>
 </bpel:literal></bpel:from>
-                <bpel:to variable="PSVehicleAgePLRequest" part="parameters"></bpel:to>
+                <bpel:to variable="gsCheckInput" part="parameters"></bpel:to>
             </bpel:copy>
             <bpel:copy>
-                <bpel:from part="parameters" variable="GSCheckPLResponse">
+                <bpel:from part="payload" variable="input">
+                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                        <![CDATA[tns:lastname]]>
+                    </bpel:query>
+                </bpel:from>
+                <bpel:to part="parameters" variable="gsCheckInput">
                     <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[lastname]]></bpel:query>
-                </bpel:from>
-                <bpel:to part="parameters" variable="PSVehicleAgePLRequest">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[lastname]]></bpel:query>
                 </bpel:to>
             </bpel:copy>
             <bpel:copy>
-                <bpel:from part="parameters" variable="GSCheckPLResponse">
+                <bpel:from part="payload" variable="input">
                     <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                        <![CDATA[firstname]]>
+                        <![CDATA[tns:firstname]]>
                     </bpel:query>
                 </bpel:from>
-                <bpel:to part="parameters" variable="PSVehicleAgePLRequest">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                        <![CDATA[firstname]]>
-                    </bpel:query>
+                <bpel:to part="parameters" variable="gsCheckInput">
+                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[firstname]]></bpel:query>
                 </bpel:to>
             </bpel:copy>
             <bpel:copy>
-                <bpel:from part="parameters" variable="GSCheckPLResponse">
+                <bpel:from part="payload" variable="input">
                     <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                        <![CDATA[regoNumber]]>
+                        <![CDATA[tns:regoNumber]]>
                     </bpel:query>
                 </bpel:from>
-                <bpel:to part="parameters" variable="PSVehicleAgePLRequest">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[RegoNumber]]></bpel:query>
+                <bpel:to part="parameters" variable="gsCheckInput">
+                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[regoNumber]]></bpel:query>
                 </bpel:to>
             </bpel:copy>
-        </bpel:assign><bpel:invoke name="invokePSVehicleAge" partnerLink="PSVehicleAgePL" operation="VehicleAge" portType="ns1:PinkSlipProvider" inputVariable="PSVehicleAgePLRequest" outputVariable="PSVehicleAgePLResponse">
-            <bpel:targets>
-                <bpel:target linkName="link6"></bpel:target>
-            </bpel:targets>
-            <bpel:sources>
-                <bpel:source linkName="link7"></bpel:source>
-            </bpel:sources>
+        </bpel:assign>
+        <bpel:invoke name="CheckGreenSlip" partnerLink="GreenSlipPartnerLink" operation="GSCheck" portType="ns:GreenSlipService" inputVariable="gsCheckInput" outputVariable="gsCheckOutput">
         </bpel:invoke>
-    
-    <bpel:assign validate="no" name="Assign3">
-            <bpel:targets>
-                <bpel:target linkName="link7"></bpel:target>
-            </bpel:targets>
-            <bpel:sources>
-                <bpel:source linkName="link8"></bpel:source>
-            </bpel:sources>
-            <bpel:copy>
-                <bpel:from><bpel:literal><tns:AutoCheckResponse xmlns:tns="http://rms.soacourse.unsw.edu.au/autocheck" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <bpel:if name="Paid">
+            <bpel:condition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[$gsCheckOutput.parameters/paidFlag="true"]]></bpel:condition>
+            <bpel:sequence>
+                <bpel:assign validate="no" name="Assign1">
+                    
+                    
+                    <bpel:copy>
+                        <bpel:from><bpel:literal><tns:AutoCheckResponse xmlns:tns="http://rms.soacourse.unsw.edu.au/autocheck" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <tns:result>tns:result</tns:result>
 </tns:AutoCheckResponse>
 </bpel:literal></bpel:from>
-                <bpel:to variable="output" part="payload"></bpel:to>
-            </bpel:copy>
-            <bpel:copy>
-                <bpel:from part="parameters" variable="PSVehicleAgePLResponse">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
-                        <![CDATA[age]]>
-                    </bpel:query>
-                </bpel:from>
-                <bpel:to part="payload" variable="output">
-                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
-                </bpel:to>
-            </bpel:copy>
-        </bpel:assign></bpel:flow>
+                        <bpel:to variable="output" part="payload"></bpel:to>
+                    </bpel:copy>
+                    <bpel:copy>
+                        <bpel:from part="parameters" variable="gsCheckOutput">
+                            <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                <![CDATA[paidFlag]]>
+                            </bpel:query>
+                        </bpel:from>
+                        <bpel:to part="payload" variable="output">
+                            <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
+                        </bpel:to>
+                    </bpel:copy>
+                </bpel:assign>
+                <bpel:reply name="Reply" partnerLink="client" operation="check" portType="tns:AutoCheck" variable="output"></bpel:reply>
+            </bpel:sequence>
+            <bpel:else>
+                <bpel:sequence>
+                    
+                    <bpel:assign validate="no" name="Assign2">
+                        
+                    
+                        <bpel:copy>
+                            <bpel:from><bpel:literal><tns:AutoCheckResponse xmlns:tns="http://rms.soacourse.unsw.edu.au/autocheck" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <tns:result>tns:result</tns:result>
+</tns:AutoCheckResponse>
+</bpel:literal></bpel:from>
+                            <bpel:to variable="output" part="payload"></bpel:to>
+                        </bpel:copy>
+                        <bpel:copy>
+                            <bpel:from part="parameters" variable="gsCheckOutput">
+                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                                    <![CDATA[regoNumber]]>
+                                </bpel:query>
+                            </bpel:from>
+                            <bpel:to part="payload" variable="output">
+                                <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:result]]></bpel:query>
+                            </bpel:to>
+                        </bpel:copy>
+                    </bpel:assign>
+                    <bpel:reply name="Reply1" partnerLink="client" operation="check" portType="tns:AutoCheck" variable="output"></bpel:reply>
+                    
+                    
+                    
+                </bpel:sequence>
+            </bpel:else>
+        </bpel:if>
+        
+    </bpel:sequence>
 </bpel:process>
 

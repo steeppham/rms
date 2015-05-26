@@ -7,7 +7,7 @@
     <provide partnerLink="client">
       <service name="autocheck:AutoCheckService" port="AutoCheckPort"/>
     </provide>
-    <invoke partnerLink="GSCheckPL">
+    <invoke partnerLink="GreenSlipPartnerLink">
       <service name="greenslipservice.rms.soacourse.unsw.edu.au:GreenSlipServiceImplService" port="GreenSlipServiceImplPort"/>
     </invoke>
   </process>
